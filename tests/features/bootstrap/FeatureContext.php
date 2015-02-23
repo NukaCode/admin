@@ -33,12 +33,14 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
     /**
      * @Given I click :arg1
+     *
+     * @param $arg1 Text of the link
      */
     public function iClick($arg1)
     {
         $session = $this->getSession()->getPage();
 
-        $link = $session->find('xpath', '//span[text()=\'Return to site\']');
+        $link = $session->find('xpath', '//span[text()=\''. $arg1 .'\']');
 
         $link->getParent()->click();
     }
