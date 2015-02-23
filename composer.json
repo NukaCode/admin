@@ -1,6 +1,6 @@
 {
-  "name": "nukacode/front-end-bootstrap",
-  "description": "Helpers and views for a basic bootstrap setup.",
+  "name": "nukacode/admin",
+  "description": "An extendable admin area.",
   "license": "MIT",
   "authors": [
     {
@@ -31,7 +31,7 @@
       "src/views"
     ],
     "psr-4": {
-      "NukaCode\\Bootstrap\\": "src/NukaCode/Bootstrap"
+      "NukaCode\\Admin\\": "src/NukaCode/Admin"
     }
   },
   "minimum-stability": "dev"
