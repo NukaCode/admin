@@ -37,7 +37,7 @@ class AdminServiceProvider extends BaseServiceProvider {
      */
     protected function shareWithApp()
     {
-        $this->app['admin'] = $this->app->share(function ($app) {
+        $this->app['admin'] = $this->app->share(function () {
             return true;
         });
     }

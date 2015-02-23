@@ -37,4 +37,4 @@ class AdminCommand extends Command {
     {
 		$this->filesystem->runAdminConfigs();
     }
-} 
+}
