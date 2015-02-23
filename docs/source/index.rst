@@ -6,10 +6,10 @@ custom json files.
 ======
 Badges
 ======
-.. image:: https://scrutinizer-ci.com/g/NukaCode/admin/badges/quality-sadmin.png
-    :target: https://scrutinizer-ci.com/g/NukaCode/admin/
-.. image:: https://scrutinizer-ci.com/g/NukaCode/admin/badges/coverage.png
-    :target: https://scrutinizer-ci.com/g/NukaCode/admin/
+.. image:: https://scrutinizer-ci.com/g/NukaCode/admin/badges/quality-score.png?b=master
+    :target: https://scrutinizer-ci.com/g/NukaCode/admin/?b=master
+.. image:: https://scrutinizer-ci.com/g/NukaCode/admin/badges/coverage.png?b=master
+    :target: https://scrutinizer-ci.com/g/NukaCode/admin/?b=master
 .. image:: https://travis-ci.org/NukaCode/admin.svg
     :target: https://travis-ci.org/NukaCode/admin
 .. image:: https://poser.pugx.org/nukacode/admin/v/stable.svg
@@ -22,7 +22,7 @@ Badges
 
 Links
 ------------------
-* `Github <https://github.com/NukaCode/admin/tree/master/src/NukaCode/Core>`_
+* `Github <https://github.com/NukaCode/admin/tree/master/src/NukaCode/admin>`_
 * `Packagist <https://packagist.org/packages/nukacode/admin>`_
 
 Installation
