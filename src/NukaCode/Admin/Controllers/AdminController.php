@@ -17,6 +17,7 @@ class AdminController extends BaseController {
     public function dashboard(Filesystem $file, Repository $configRepository)
     {
         $adminConfig = base_path('admin.json');
+
         if ($file->exists($adminConfig)) {
             $config = json_decode($file->get($adminConfig));
 

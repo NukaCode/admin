@@ -26,6 +26,7 @@ class AdminServiceProvider extends BaseServiceProvider {
     {
         $this->shareWithApp();
         $this->setPublishGroups();
+        $this->registerAliases();
         $this->registerViews();
         $this->registerArtisanCommands();
     }
@@ -57,6 +58,24 @@ class AdminServiceProvider extends BaseServiceProvider {
     }
 
     /**
+     * Register aliases
+     *
+     * @return void
+     */
+    protected function registerAliases()
+    {
+        $aliases = [
+            // Facades
+            'bForm' => 'NukaCode\Bootstrap\Support\Html\Form',
+            'bHTML' => 'NukaCode\Bootstrap\Support\Html\HTML',
+        ];
+
+        $exclude = $this->app['config']->get('nukacode-core.excludeAliases');
+
+        $this->loadAliases($aliases, $exclude);
+    }
+
+    /**
      * Register views
      *
      * @return void
@@ -64,7 +83,7 @@ class AdminServiceProvider extends BaseServiceProvider {
     protected function registerViews()
     {
         if ($this->app['config']->has('nukacode-frontend.type')) {
-            $this->app['view']->addLocation(__DIR__ . '/../../views/' . $this->app['config']->get('nukacode-frontend.type'));
+            $this->app['view']->addLocation(__DIR__ . '/../../views/');
         }
     }
 

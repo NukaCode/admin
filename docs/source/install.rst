@@ -12,6 +12,7 @@ Add the following service providers to ``configs/app.php``.
 .. code::
 
      'NukaCode\Admin\AdminServiceProvider',
+     'NukaCode\Bootstrap\Html\HtmlServiceProvider',
 
 Configs/Migrations/Seeds
 ------------------------
@@ -78,6 +79,8 @@ structure for vendor packages and add them to your bower set up.
     .copy(bower_dir + 'select2/select2.min.js', 'resources/js/vendor/select2.js')
     .copy(bower_dir + 'metisMenu/dist/metisMenu.min.js', 'resources/js/vendor/metisMenu.js')
     .copy(bower_dir + 'mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js', 'resources/js/vendor/bootstrap-colorpicker.js')
+    .copy(bower_dir + 'jasny-bootstrap/dist/js/jasny-bootstrap.min.js', 'resources/js/vendor/jasny-bootstrap.js')
+
     .scripts(
     [
         'resources/js/vendor/jquery.js',
@@ -87,18 +90,21 @@ structure for vendor packages and add them to your bower set up.
         'resources/js/vendor/bootbox.js',
         'resources/js/vendor/select2.js',
         'resources/js/vendor/metisMenu.js',
-        'resources/js/vendor/bootstrap-colorpicker.js'
+        'resources/js/vendor/bootstrap-colorpicker.js',
+        'resources/js/vendor/jasny-bootstrap.js',
     ], 'public/js/admin-all.js')
 
     // CSS
+    .copy(bower_dir + 'nukacode-admin/css/admin.css', 'resources/css/vendor/admin.css')
     .copy(bower_dir + 'font-awesome/css/font-awesome.min.css', 'resources/css/vendor/font-awesome.css')
     .copy(bower_dir + 'messenger/build/css/messenger.css', 'resources/css/vendor/messenger.css')
     .copy(bower_dir + 'messenger/build/css/messenger-theme-future.css', 'resources/css/vendor/messenger-theme-future.css')
     .copy(bower_dir + 'select2/select2.css', 'resources/css/vendor/select2.css')
     .copy(bower_dir + 'select2-bootstrap3-css/select2-bootstrap.css', 'resources/css/vendor/select2-bootstrap.css')
-    .copy(bower_dir + 'mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css', 'resources/css/vendor/colorpicker/css/bootstrap-colorpicker.min.css')
-    .copy(bower_dir + 'metisMenu/dist/css/metisMenu.css', 'resources/css/vendor/metisMenu.css')
-    .copy(bower_dir + 'nukacode-admin/css/admin.css', 'resources/css/vendor/admin.css')
+    .copy(bower_dir + 'metisMenu/dist/metisMenu.css', 'resources/css/vendor/metisMenu.css')
+    .copy(bower_dir + 'jasny-bootstrap/dist/css/jasny-bootstrap.min.css', 'resources/css/vendor/jasny-bootstrap.css')
+    .copy(bower_dir + 'mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css', 'resources/css/vendor/bootstrap-colorpicker.css')
+
     .styles(
     [
         'resources/css/vendor/admin.css',
@@ -108,7 +114,8 @@ structure for vendor packages and add them to your bower set up.
         'resources/css/vendor/select2.css',
         'resources/css/vendor/select2-bootstrap.css',
         'resources/css/vendor/metisMenu.css',
-        'resources/css/vendor/colorpicker/css/bootstrap-colorpicker.min.css'
+        'resources/css/vendor/bootstrap-colorpicker.css',
+        'resources/css/vendor/jasny-bootstrap.css',
     ], 'public/css/admin-all.css')
 
     // Extras
