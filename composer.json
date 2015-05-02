@@ -1,0 +1,38 @@
+{
+  "name": "nukacode/admin",
+  "description": "An extendable admin area.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Stygian",
+      "email": "stygian.warlock.v2@gmail.com"
+    },
+    {
+      "name": "Riddles",
+      "email": "riddles@dev-toolbox.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": "~5.0",
+    "nukacode/core": "~2.0"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.1",
+    "henrikbjorn/phpspec-code-coverage": "~0.2",
+    "behat/behat": "~3.0@dev",
+    "behat/mink": "~1.6@dev",
+    "behat/mink-extension": "~2.0@dev",
+    "laracasts/behat-laravel-extension": "dev-master",
+    "behat/mink-selenium2-driver": "~1.2@dev",
+    "behat/mink-goutte-driver": "~1.1@dev"
+  },
+  "autoload": {
+    "classmap": [
+      "src/views"
+    ],
+    "psr-4": {
+      "NukaCode\\Admin\\": "src/NukaCode/Admin"
+    }
+  },
+  "minimum-stability": "dev"
+}
