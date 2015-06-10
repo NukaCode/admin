@@ -13,7 +13,7 @@ class AdminServiceProvider extends BaseServiceProvider {
 
     const NAME = 'admin';
 
-    const VERSION = '1.0.2';
+    const VERSION = '1.0.3';
 
     const DOCS = 'nukacode-admin';
 
