@@ -50,11 +50,7 @@ class AdminServiceProvider extends BaseServiceProvider {
      */
     protected function setPublishGroups()
     {
-        $this->publishes(
-            [
-                __DIR__ . '/../../config/config.php' => config_path('nukacode-admin.php')
-            ], 'config'
-        );
+        //
     }
 
     /**
